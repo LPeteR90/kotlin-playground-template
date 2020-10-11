@@ -2,10 +2,13 @@ import Versions.KOTEST_VERSION
 import Versions.MOCKK_VERSION
 import Versions.KOTLIN_COROUTINES_VERSION
 import Core.KOTLINX_GROUP
+import Versions.ARROW_VERSION
 
 object Versions {
     const val KOTLIN_VERSION = "1.4.10"
     const val KOTLIN_COROUTINES_VERSION = "1.3.9"
+
+    const val ARROW_VERSION = "0.10.5"
 
     const val KOTEST_VERSION = "4.3.0"
     const val MOCKK_VERSION = "1.10.0"
@@ -20,9 +23,16 @@ object Plugins {
 }
 
 object Core {
+    private const val ARROW_GROUP = "io.arrow-kt"
     const val KOTLINX_GROUP = "org.jetbrains.kotlinx"
+
     const val STD_LIB = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     const val KOTLINX_COROUTINES = "$KOTLINX_GROUP:kotlinx-coroutines-core:$KOTLIN_COROUTINES_VERSION"
+
+    const val ARROW_FX = "$ARROW_GROUP:arrow-fx:$ARROW_VERSION"
+    const val ARROW_OPTICS = "$ARROW_GROUP:arrow-optics:$ARROW_VERSION"
+    const val ARROW_SYNTAX = "$ARROW_GROUP:arrow-syntax:$ARROW_VERSION"
+    const val ARROW_META = "$ARROW_GROUP:arrow-meta:$ARROW_VERSION"
 }
 
 object Testing {
