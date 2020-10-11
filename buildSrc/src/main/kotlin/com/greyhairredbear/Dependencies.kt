@@ -1,8 +1,11 @@
 import Versions.KOTEST_VERSION
 import Versions.MOCKK_VERSION
+import Versions.KOTLIN_COROUTINES_VERSION
+import Core.KOTLINX_GROUP
 
 object Versions {
     const val KOTLIN_VERSION = "1.4.10"
+    const val KOTLIN_COROUTINES_VERSION = "1.3.9"
 
     const val KOTEST_VERSION = "4.3.0"
     const val MOCKK_VERSION = "1.10.0"
@@ -17,7 +20,9 @@ object Plugins {
 }
 
 object Core {
+    const val KOTLINX_GROUP = "org.jetbrains.kotlinx"
     const val STD_LIB = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    const val KOTLINX_COROUTINES = "$KOTLINX_GROUP:kotlinx-coroutines-core:$KOTLIN_COROUTINES_VERSION"
 }
 
 object Testing {
@@ -28,4 +33,6 @@ object Testing {
     const val KOTEST_PROPERTIES = "$KOTEST_GROUP:kotest-property-jvm:$KOTEST_VERSION"
 
     const val MOCKK = "io.mockk:mockk:$MOCKK_VERSION"
+
+    const val KOTLINX_COROUTINES_TEST = "$KOTLINX_GROUP:kotlinx-coroutines-test:$KOTLIN_COROUTINES_VERSION"
 }

@@ -35,13 +35,14 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 dependencies {
     implementation(Core.STD_LIB)
-
+    implementation(Core.KOTLINX_COROUTINES)
 
     testImplementation(Testing.KOTEST_RUNNER)
     testImplementation(Testing.KOTEST_JUNIT_RUNNER)
     testImplementation(Testing.KOTEST_ASSERTIONS)
     testImplementation(Testing.KOTEST_PROPERTIES)
     testImplementation(Testing.MOCKK)
+    testImplementation(Testing.KOTLINX_COROUTINES_TEST)
 }
 
 tasks.withType<KotlinCompile> {
