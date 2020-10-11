@@ -38,7 +38,7 @@ dependencies {
 
 
     testImplementation(Testing.KOTEST_RUNNER)
-    testImplementation(Testing.KOTEST_RUNNER_CONSOLE)
+    testImplementation(Testing.KOTEST_JUNIT_RUNNER)
     testImplementation(Testing.KOTEST_ASSERTIONS)
     testImplementation(Testing.KOTEST_PROPERTIES)
     testImplementation(Testing.MOCKK)
