@@ -6,7 +6,7 @@ import Versions.ARROW_VERSION
 
 object Versions {
     const val KOTLIN_VERSION = "1.4.10"
-    const val KOTLIN_COROUTINES_VERSION = "1.3.9"
+    const val KOTLIN_COROUTINES_VERSION = "1.4.0-M1"
 
     const val ARROW_VERSION = "0.10.5"
 
